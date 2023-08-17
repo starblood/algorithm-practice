@@ -1,6 +1,7 @@
 package algorithms;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class Graph<T> {
     private Map<T, List<T>> adjList;
@@ -9,7 +10,7 @@ public class Graph<T> {
     }
 
     public List<T> nodes() {
-        return adjList.keySet().stream().toList();
+        return new ArrayList<>(adjList.keySet());
     }
 
     public List<T> neighbors(T node) {
