@@ -8,4 +8,4 @@ lazy val root = (project in file("."))
   )
 
 // to support baekjoon judge use java 11
-javacOptions ++= Seq("-source", "11", "-target", "8")
+javacOptions ++= Seq("-source", "11", "-target", "11")
